@@ -47,7 +47,7 @@ endef
 
 define Package/hcxdumptool-custom/install
   $(INSTALL_DIR)  $(1)/sbin
-  $(INSTALL_BIN)  $(BUILD_DIR3)/hcxdumptool  $(1)/sbin/
+  $(INSTALL_BIN)  $(PKG_BUILD_DIR)/hcxdumptool  $(1)/sbin/
 endef
 
 $(eval $(call BuildPackage,hcxdumptool-custom))

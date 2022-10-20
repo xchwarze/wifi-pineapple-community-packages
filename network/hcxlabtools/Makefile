@@ -47,11 +47,11 @@ endef
 
 define Package/hcxlabtool/install
   $(INSTALL_DIR)  $(1)/sbin
-  $(INSTALL_BIN)  $(BUILD_DIR2)/hcxlabgetm1     $(1)/sbin/
-  $(INSTALL_BIN)  $(BUILD_DIR2)/hcxlabgetm2     $(1)/sbin/
-  $(INSTALL_BIN)  $(BUILD_DIR2)/hcxlabgetm1234  $(1)/sbin/
-  $(INSTALL_BIN)  $(BUILD_DIR2)/hcxlabgetmall   $(1)/sbin/
-  $(INSTALL_BIN)  $(BUILD_DIR2)/hcxlabdumpall   $(1)/sbin/
+  $(INSTALL_BIN)  $(PKG_BUILD_DIR)/hcxlabgetm1     $(1)/sbin/
+  $(INSTALL_BIN)  $(PKG_BUILD_DIR)/hcxlabgetm2     $(1)/sbin/
+  $(INSTALL_BIN)  $(PKG_BUILD_DIR)/hcxlabgetm1234  $(1)/sbin/
+  $(INSTALL_BIN)  $(PKG_BUILD_DIR)/hcxlabgetmall   $(1)/sbin/
+  $(INSTALL_BIN)  $(PKG_BUILD_DIR)/hcxlabdumpall   $(1)/sbin/
 endef
 
 $(eval $(call BuildPackage,hcxlabtool))

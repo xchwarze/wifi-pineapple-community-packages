@@ -44,22 +44,22 @@ endef
 
 define Package/hcxtools-custom/install
   $(INSTALL_DIR) $(1)/sbin
-  $(INSTALL_BIN) $(BUILD_DIR1)/hcxpcapngtool                $(1)/sbin/
-  $(INSTALL_BIN) $(BUILD_DIR1)/hcxhashtool                  $(1)/sbin/
-  $(INSTALL_BIN) $(BUILD_DIR1)/hcxpsktool                   $(1)/sbin/
-  $(INSTALL_BIN) $(BUILD_DIR1)/hcxpmktool                   $(1)/sbin/
-  $(INSTALL_BIN) $(BUILD_DIR1)/hcxeiutool                   $(1)/sbin/
-  $(INSTALL_BIN) $(BUILD_DIR1)/hcxwltool                    $(1)/sbin/
-  $(INSTALL_BIN) $(BUILD_DIR1)/hcxhash2cap                  $(1)/sbin/
-  $(INSTALL_BIN) $(BUILD_DIR1)/wlancap2wpasec               $(1)/sbin/
-  $(INSTALL_BIN) $(BUILD_DIR1)/whoismac                     $(1)/sbin/
-  $(INSTALL_BIN) $(BUILD_DIR1)/usefulscripts/hcxgrep.py     $(1)/sbin/
+  $(INSTALL_BIN) $(PKG_BUILD_DIR)/hcxpcapngtool                $(1)/sbin/
+  $(INSTALL_BIN) $(PKG_BUILD_DIR)/hcxhashtool                  $(1)/sbin/
+  $(INSTALL_BIN) $(PKG_BUILD_DIR)/hcxpsktool                   $(1)/sbin/
+  $(INSTALL_BIN) $(PKG_BUILD_DIR)/hcxpmktool                   $(1)/sbin/
+  $(INSTALL_BIN) $(PKG_BUILD_DIR)/hcxeiutool                   $(1)/sbin/
+  $(INSTALL_BIN) $(PKG_BUILD_DIR)/hcxwltool                    $(1)/sbin/
+  $(INSTALL_BIN) $(PKG_BUILD_DIR)/hcxhash2cap                  $(1)/sbin/
+  $(INSTALL_BIN) $(PKG_BUILD_DIR)/wlancap2wpasec               $(1)/sbin/
+  $(INSTALL_BIN) $(PKG_BUILD_DIR)/whoismac                     $(1)/sbin/
+  $(INSTALL_BIN) $(PKG_BUILD_DIR)/usefulscripts/hcxgrep.py     $(1)/sbin/
 
   # Deprecated Tools Below
-  $(INSTALL_BIN) $(BUILD_DIR1)/hcxmactool                   $(1)/sbin/
-  $(INSTALL_BIN) $(BUILD_DIR1)/hcxessidtool                 $(1)/sbin/
-  $(INSTALL_BIN) $(BUILD_DIR1)/hcxpmkidtool                 $(1)/sbin/
-  $(INSTALL_BIN) $(BUILD_DIR1)/hcxhashcattool               $(1)/sbin/
+  $(INSTALL_BIN) $(PKG_BUILD_DIR)/hcxmactool                   $(1)/sbin/
+  $(INSTALL_BIN) $(PKG_BUILD_DIR)/hcxessidtool                 $(1)/sbin/
+  $(INSTALL_BIN) $(PKG_BUILD_DIR)/hcxpmkidtool                 $(1)/sbin/
+  $(INSTALL_BIN) $(PKG_BUILD_DIR)/hcxhashcattool               $(1)/sbin/
 endef
 
 $(eval $(call BuildPackage,hcxtools-custom))
