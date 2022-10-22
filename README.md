@@ -21,15 +21,15 @@ cp feeds.conf.default feeds.conf
 echo "src-git wpcpackages https://github.com/xchwarze/wifi-pineapple-community-packages.git" >> feeds.conf
 
 # build and install tools and toolchain
-#make tools/install -j12
-#make toolchain/install -j12
+make tools/install -j12
+make toolchain/install -j12
 
 # download and index feeds
 ./scripts/feeds update -a
 ./scripts/feeds update -i
 
 # generate make for package
-./scripts/feeds install hcxtools-custom
+./scripts/feeds install hcxtools-custom hcxdumptool-custom hcxlabtools
 
 # add packages to build
 make menuconfig
