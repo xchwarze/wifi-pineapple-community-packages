@@ -8,7 +8,7 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=hcxlabtool
+PKG_NAME:=hcxlabtools
 PKG_VERSION:=6.2.7
 PKG_RELEASE:=$(AUTORELEASE)
 
@@ -22,16 +22,16 @@ PKG_LICENSE_FILES:=license.txt
 
 include $(INCLUDE_DIR)/package.mk
 
-define Package/hcxlabtool
+define Package/hcxlabtools
 	SECTION:=net
 	CATEGORY:=Network
 	DEPENDS:=+libpcap +libopenssl
-	TITLE:=hcxlabtool
+	TITLE:=hcxlabtools
 	URL:=https://github.com/zerbea/wifi_laboratory
 	SUBMENU:=Wireless
 endef
 
-define Package/hcxlabtool/description
+define Package/hcxlabtools/description
 	Skeleton to test WiFi adapters and to understand 802.11 protocol. 
 endef
 
@@ -41,7 +41,7 @@ define Build/Compile
 		CFLAGS="$(TARGET_CFLAGS)"
 endef
 
-define Package/hcxlabtool/install
+define Package/hcxlabtools/install
 	$(INSTALL_DIR)  $(1)/sbin
 	$(INSTALL_BIN)  $(PKG_BUILD_DIR)/hcxlabgetm1     $(1)/sbin/
 	$(INSTALL_BIN)  $(PKG_BUILD_DIR)/hcxlabgetm2     $(1)/sbin/
@@ -50,4 +50,4 @@ define Package/hcxlabtool/install
 	$(INSTALL_BIN)  $(PKG_BUILD_DIR)/hcxlabdumpall   $(1)/sbin/
 endef
 
-$(eval $(call BuildPackage,hcxlabtool))
+$(eval $(call BuildPackage,hcxlabtools))
