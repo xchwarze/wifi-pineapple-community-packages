@@ -9,12 +9,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=hcxdumptool-custom
-PKG_VERSION:=6.2.5
+PKG_VERSION:=6.2.7
 PKG_RELEASE:=$(AUTORELEASE)
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/zerbea/hcxdumptool.git
-PKG_SOURCE_VERSION:=e0b4199eb4c083ddd6d6ff9e69c4cdc041b8b83e
+PKG_SOURCE_VERSION:=b9af8bdeacd1b4fd31e6ad8884e1b5b1ccb7e4fe
 
 PKG_MAINTAINER:=DSR! <xchwarze@gmail.com>
 PKG_LICENSE:=MIT

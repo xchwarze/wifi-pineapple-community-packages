@@ -9,12 +9,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=hcxtools-custom
-PKG_VERSION:=6.2.5
+PKG_VERSION:=6.2.7
 PKG_RELEASE:=$(AUTORELEASE)
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/zerbea/hcxtools.git
-PKG_SOURCE_VERSION:=fd866a1003bf7380c3cbf925dceaabdb47d02832
+PKG_SOURCE_VERSION:=23b1fb3bafc2fe1c558f22b7aa031a9b57b1d532
 
 PKG_MAINTAINER:=DSR! <xchwarze@gmail.com>
 PKG_LICENSE:=MIT

@@ -9,12 +9,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=hcxlabtool
-PKG_VERSION:=6.2.5
+PKG_VERSION:=6.2.7
 PKG_RELEASE:=$(AUTORELEASE)
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/zerbea/wifi_laboratory.git
-PKG_SOURCE_VERSION:=21ccf02fea8959cc4cb96e00691289638f511323
+PKG_SOURCE_VERSION:=c699e319f64835feeb155cb4c340b4bfda43a5f0
 
 PKG_MAINTAINER:=DSR! <xchwarze@gmail.com>
 PKG_LICENSE:=MIT
