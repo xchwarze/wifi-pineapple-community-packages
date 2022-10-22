@@ -20,16 +20,19 @@ cp feeds.conf.default feeds.conf
 # add openwrt-useful-tools feed
 echo "src-git wpcpackages https://github.com/xchwarze/wifi-pineapple-community-packages.git" >> feeds.conf
 
-# build and install tools and toolchain V=sc
-make tools/install -j12
-make toolchain/install -j12
+# build and install tools and toolchain
+#make tools/install -j12
+#make toolchain/install -j12
 
 # download and index feeds
 ./scripts/feeds update -a
 ./scripts/feeds update -i
 
 # generate make for package
-./scripts/feeds install hcxtools-custom hcxdumptool-custom hcxlabtools
+./scripts/feeds install hcxtools-custom
+
+# add packages to build
+make menuconfig
 
 # build package
 make package/hcxtools-custom/download
