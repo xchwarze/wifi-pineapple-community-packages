@@ -37,7 +37,7 @@ TARGET_CFLAGS="-fPIC"
 
 define Package/mdk3/install
 	$(INSTALL_DIR) $(1)/usr/sbin
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/mdk3 $(1)/usr/sbin/
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/src/mdk3 $(1)/usr/sbin/
 endef
 
 $(eval $(call BuildPackage,mdk3))
