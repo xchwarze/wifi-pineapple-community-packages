@@ -29,7 +29,7 @@ make toolchain/install -j12
 ./scripts/feeds update -i
 
 # generate make for package
-./scripts/feeds install hcxtools-custom hcxdumptool-custom hcxlabtools
+./scripts/feeds install -p wpcpackages hcxtools-custom
 
 # add packages to build
 make menuconfig
