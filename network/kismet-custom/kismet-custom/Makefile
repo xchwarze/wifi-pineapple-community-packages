@@ -13,7 +13,7 @@ include $(INCLUDE_DIR)/package.mk
 
 # We need libwebsockets 3.2 or higher, which apparently is nonfunctional on openwrt
 
-define Package/kismet
+define Package/kismet-custom
   SECTION:=net
   CATEGORY:=Network
   TITLE:=Kismet 2021
